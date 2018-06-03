@@ -1,4 +1,4 @@
-var possibleMatches = require("../data/friends");
+var possibleMatches = require("../data/friend");
 
 
 module.exports = function(app) {

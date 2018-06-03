@@ -17,7 +17,7 @@
     <div class="jumbotron">
       <h1 class="text-center"><span class="fa fa-fire"></span>Friend Finder</h1>
       <hr>
-      <h2 class="text-center">Meet your match!/h2>
+      <h2 class="text-center">Meet your match!</h2>
       <br>
 
       <div class="text-center">
@@ -42,7 +42,7 @@
               </div>
 
               <div class="form-group">
-                <label for=friend-picture">Picture</label>
+                <label for="friend-picture">Picture</label>
                 <input type="text" class="form-control" id="reserve-phone">
               </div>
 
@@ -108,7 +108,7 @@
 
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/tables">API Matches</a></p>
+        <p>Copyright&copy  Roberto Baldizon</p>
       </div>
     </footer>
 
@@ -139,7 +139,7 @@
 
       console.log(newFriend);
 
-      $.post("/api/tables", newFriend,
+      $.post("/api/friends", newFriend,
         function(data) {
 
           if (data) {
