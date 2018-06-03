@@ -21,7 +21,6 @@
       <br>
 
       <div class="text-center">
-        <a href="/tables"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> View Matches</button></a>
         <a href="/"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
       </div>
     </div>
@@ -57,6 +56,46 @@
                 <input type="text" class="form-control" id="reserve-unique-id">
               </div>
 
+              <div class="form-group">
+                <label for="friend-q3">q3</label>
+                <input type="text" class="form-control" id="reserve-unique-id">
+              </div>
+
+              <div class="form-group">
+                <label for="friend-q4">q4</label>
+                <input type="text" class="form-control" id="reserve-unique-id">
+              </div>
+
+              <div class="form-group">
+                <label for="friend-q5">q5</label>
+                <input type="text" class="form-control" id="reserve-unique-id">
+              </div>
+
+              <div class="form-group">
+                <label for="friend-q6">q6</label>
+                <input type="text" class="form-control" id="reserve-unique-id">
+              </div>
+
+              <div class="form-group">
+                <label for="friend-q7">q7</label>
+                <input type="text" class="form-control" id="reserve-unique-id">
+              </div>
+
+              <div class="form-group">
+                <label for="friend-q8">q8</label>
+                <input type="text" class="form-control" id="reserve-unique-id">
+              </div>
+
+              <div class="form-group">
+                <label for="friend-q9">q9</label>
+                <input type="text" class="form-control" id="reserve-unique-id">
+              </div>
+
+              <div class="form-group">
+                <label for="friend-q10">q10</label>
+                <input type="text" class="form-control" id="reserve-unique-id">
+              </div>
+
               <button type="submit" class="btn btn-primary submit">Submit</button>
             </form>
 
@@ -87,7 +126,15 @@
         friendName: $("#friend-name").val().trim(),
         friendPicture: $("#friend-picture").val().trim(),
         friend-q1: $("#friend-q1").val().trim(),
-        friend-q2: $("#friend-q2").val().trim()
+        friend-q2: $("#friend-q2").val().trim(),
+        friend-q3: $("#friend-q3").val().trim(),
+        friend-q4: $("#friend-q4").val().trim(),
+        friend-q5: $("#friend-q5").val().trim(),
+        friend-q6: $("#friend-q6").val().trim(),
+        friend-q7: $("#friend-q7").val().trim(),
+        friend-q8: $("#friend-q8").val().trim(),
+        friend-q9: $("#friend-q9").val().trim(),
+        friend-q10: $("#friend-q10").val().trim()
       };
 
       console.log(newFriend);
@@ -103,6 +150,14 @@
           $("#friend-picture").val("");
           $("#friend-q1").val("");
           $("#friend-q2").val("");
+          $("#friend-q3").val("");
+          $("#friend-q4").val("");
+          $("#friend-q5").val("");
+          $("#friend-q6").val("");
+          $("#friend-q7").val("");
+          $("#friend-q8").val("");
+          $("#friend-q9").val("");
+          $("#friend-q10").val("");
 
         });
 
