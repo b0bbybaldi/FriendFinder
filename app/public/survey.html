@@ -37,66 +37,66 @@
             <form role="form">
 
               <div class="form-group">
-                <label for="friend-name">Name</label>
-                <input type="text" class="form-control" id="reserve-name">
+                <label for="friendname">Name</label>
+                <input type="text" class="form-control" id="friendname">
               </div>
 
               <div class="form-group">
-                <label for="friend-picture">Picture</label>
-                <input type="text" class="form-control" id="reserve-phone">
+                <label for="friendpicture">Picture</label>
+                <input type="text" class="form-control" id="friendpicture">
               </div>
 
               <div class="form-group">
-                <label for="friend-q1">q1</label>
-                <input type="text" class="form-control" id="reserve-email">
+                <label for="friendq1">q1</label>
+                <input type="text" class="form-control" id="friendq1">
               </div>
 
               <div class="form-group">
-                <label for="friend-q2">q2</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="friendq2">q2</label>
+                <input type="text" class="form-control" id="friendq2">
               </div>
 
               <div class="form-group">
-                <label for="friend-q3">q3</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="friendq3">q3</label>
+                <input type="text" class="form-control" id="friendq3">
               </div>
 
               <div class="form-group">
-                <label for="friend-q4">q4</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="friendq4">q4</label>
+                <input type="text" class="form-control" id="friendq4">
               </div>
 
               <div class="form-group">
-                <label for="friend-q5">q5</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="friendq5">q5</label>
+                <input type="text" class="form-control" id="friendq5">
               </div>
 
               <div class="form-group">
-                <label for="friend-q6">q6</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="friendq6">q6</label>
+                <input type="text" class="form-control" id="friendq6">
               </div>
 
               <div class="form-group">
-                <label for="friend-q7">q7</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="friendq7">q7</label>
+                <input type="text" class="form-control" id="friendq7">
               </div>
 
               <div class="form-group">
-                <label for="friend-q8">q8</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="friendq8">q8</label>
+                <input type="text" class="form-control" id="friendq8">
               </div>
 
               <div class="form-group">
-                <label for="friend-q9">q9</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="friendq9">q9</label>
+                <input type="text" class="form-control" id="friendq9">
               </div>
 
               <div class="form-group">
-                <label for="friend-q10">q10</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="friendq10">q10</label>
+                <input type="text" class="form-control" id="friendq10">
               </div>
 
-              <button type="submit" class="btn btn-primary submit">Submit</button>
+              <button type="submit" class="btn btn-primary submit" id="submitBtn">Submit</button>
             </form>
 
           </div>
@@ -119,22 +119,22 @@
 
 <script type="text/javascript">
 
-    $(".submit").on("click", function(event) {
+    $("#submitBtn").on("click", function(event) {
       event.preventDefault();
 
       var newFriend = {
-        friendName: $("#friend-name").val().trim(),
-        friendPicture: $("#friend-picture").val().trim(),
-        friend-q1: $("#friend-q1").val().trim(),
-        friend-q2: $("#friend-q2").val().trim(),
-        friend-q3: $("#friend-q3").val().trim(),
-        friend-q4: $("#friend-q4").val().trim(),
-        friend-q5: $("#friend-q5").val().trim(),
-        friend-q6: $("#friend-q6").val().trim(),
-        friend-q7: $("#friend-q7").val().trim(),
-        friend-q8: $("#friend-q8").val().trim(),
-        friend-q9: $("#friend-q9").val().trim(),
-        friend-q10: $("#friend-q10").val().trim()
+        friendName: $("#friendname").val().trim(),
+        friendPicture: $("#friendpicture").val().trim(),
+        friendq1: $("#friendq1").val().trim(),
+        friendq2: $("#friendq2").val().trim(),
+        friendq3: $("#friendq3").val().trim(),
+        friendq4: $("#friendq4").val().trim(),
+        friendq5: $("#friendq5").val().trim(),
+        friendq6: $("#friendq6").val().trim(),
+        friendq7: $("#friendq7").val().trim(),
+        friendq8: $("#friendq8").val().trim(),
+        friendq9: $("#friendq9").val().trim(),
+        friendq10: $("#friendq10").val().trim()
       };
 
       console.log(newFriend);
@@ -146,18 +146,18 @@
             alert("Fetching for the one ;)");
           }
 
-          $("#friend-name").val("");
-          $("#friend-picture").val("");
-          $("#friend-q1").val("");
-          $("#friend-q2").val("");
-          $("#friend-q3").val("");
-          $("#friend-q4").val("");
-          $("#friend-q5").val("");
-          $("#friend-q6").val("");
-          $("#friend-q7").val("");
-          $("#friend-q8").val("");
-          $("#friend-q9").val("");
-          $("#friend-q10").val("");
+          $("#friendname").val("");
+          $("#friendpicture").val("");
+          $("#friendq1").val("");
+          $("#friendq2").val("");
+          $("#friendq3").val("");
+          $("#friendq4").val("");
+          $("#friendq5").val("");
+          $("#friendq6").val("");
+          $("#friendq7").val("");
+          $("#friendq8").val("");
+          $("#friendq9").val("");
+          $("#friendq10").val("");
 
         });
 
