@@ -301,54 +301,36 @@
         <p>Copyright&copy  Roberto Baldizon</p>
       </div>
     </footer>
-
   </div>
-
-</body>
-</html>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h4>Best work-ou buddy Match</h4>
+      <div class="divider"></div>
+      <h5 id="matchName"></h5>
+      <img id="matchPhoto" width="200" src="">
+    </div>
+    <div class="modal-footer">
+      <a href="/survey" class="btn btn-primary submit">Try Again!</a>
+    </div>
 
 <style>
-
-  .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-
-  /* Modal Content/Box */
-  .modal-content {
-      background-color: #fefefe;
-      margin: 15% auto; /* 15% from the top and centered */
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%; /* Could be more or less, depending on screen size */
-  }
-
-  /* The Close Button */
-  .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-}
 
 </style>
 
 <script type="text/javascript">
+
+  $(document).ready(function(){
+    $("select").material_select();
+
+    $(".modal").modal({
+        dismissible: false,
+        opacity: .5,
+        inDuration: 300,
+        outDuration: 200, 
+        startingTop: "4%",
+        endingTop: "10%"
+    });
+  });  
 
     $("#submitBtn").on("click", function(event) {
       event.preventDefault();
@@ -376,8 +358,10 @@
         function(data) {
 
           if (data) {
-            alert("Fetching for the one ;)");
-            $()
+            alert("Matching you with your most compatible workout buddy.");
+            $("#matchName").html(data.matchName);
+            $("#matchPhoto").attr("src", data.matchPhoto);
+            $("#modal").modal("open");
           }
 
           $("#friendname").val("");
@@ -394,32 +378,7 @@
           $("#friendq10").val("");
         });
 
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("submitBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
     });
-
 </script>
+</body>
+</html>
