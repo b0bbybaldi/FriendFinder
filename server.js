@@ -6,15 +6,15 @@ var app = express();
 
 var PORT = process.env.PORT || 1992;
 
-app.use(express.static(path.join(_dirname, './app/public')))
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 
-require(_dirname, "./app/routing/apiRoutes")(app);
-require(_dirname, "./app/routing/htmlRoutes")(app);
+require(path.join(__dirname, "./app/routing/apiRoutes"))(app);
+require(path.join(__dirname, "./app/routing/htmlRoutes"))(app);
 
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
 });
+
+
