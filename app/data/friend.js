@@ -1,7 +1,7 @@
 var matches = 
     [{
         "name":"Shakira",
-        "photo":"https://www.facebook.com/photo.php?fbid=10160408443525627&l=2dbc4937f7",
+        "photo":"https://upload.wikimedia.org/wikipedia/commons/0/09/Shakira_Rio_02.jpg",
         "scores":[
             4,
             4,
@@ -46,7 +46,7 @@ var matches =
             ]
     },{
         "name":"Michael Phelps",
-        "photo":"https://www.facebook.com/photo.php?fbid=10160408443525627&l=2dbc4937f7",
+        "photo":"https://upload.wikimedia.org/wikipedia/commons/d/d9/Phelps_Santa_Clara_2009_-_start.jpg",
         "scores":[
             5,
             5,
