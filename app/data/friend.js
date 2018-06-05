@@ -1,34 +1,79 @@
 var matches = 
-[{
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
-        ]
+    [{
+        "name":"Shakira",
+        "photo":"https://www.facebook.com/photo.php?fbid=10160408443525627&l=2dbc4937f7",
+        "scores":[
+            4,
+            4,
+            3,
+            1,
+            2,
+            3,
+            2,
+            4,
+            5,
+            3
+            ]
     },{
-        "name":"Roberto",
+        "name":"Arnold Schwazenneger",
+        "photo":"https://upload.wikimedia.org/wikipedia/commons/2/23/Arnold_Schwarzenegger_%281974%29.jpg",
+        "scores":[
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1
+            ]
+    },{
+        "name":"Usain Bolt",
+        "photo":"https://upload.wikimedia.org/wikipedia/commons/4/46/Usain_Bolt_2011-09-04_001.jpg",
+        "scores":[
+            2,
+            2,
+            5,
+            3,
+            4,
+            5,
+            3,
+            2,
+            3,
+            5
+            ]
+    },{
+        "name":"Michael Phelps",
         "photo":"https://www.facebook.com/photo.php?fbid=10160408443525627&l=2dbc4937f7",
         "scores":[
             5,
             5,
+            4,
             5,
             5,
             5,
             5,
             5,
             5,
-            5,
-            5
+            4
             ]
-}]
+    },{
+        "name":"Jessica Biel",
+        "photo":"https://upload.wikimedia.org/wikipedia/commons/7/76/Biel-040618.jpg",
+        "scores":[
+            3,
+            3,
+            2,
+            5,
+            4,
+            2,
+            2,
+            3,
+            2,
+            2
+            ]
+    }]
 
 module.exports = matches;
