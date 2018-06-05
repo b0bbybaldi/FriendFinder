@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Work-out buddy</title>
+  <title>Workout Buddy</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,14 +14,14 @@
 
   <div class="container">
 
-    <div class="jumbotron">
-      <h1 class="text-center"><span class="fa fa-fire"></span>Work-out buddy</h1>
+    <div class="jumbotron" style="background-color: orange;border-color: orange;color:black">
+      <h1 class="text-center"><span class="fa fa-hand-grab-o"></span>Workout Buddy</h1>
       <hr>
-      <h2 class="text-center">Find your next work-out buddy!</h2>
+      <h2 class="text-center">Match with your ideal workout buddy!</h2>
       <br>
 
       <div class="text-center">
-        <a href="/"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
+        <a href="/"><button class="btn btn-lg btn-default" style="background-color:black;border-color: black;color:white"><span class="fa fa-home"></span></button></a>
       </div>
     </div>
 
@@ -30,7 +30,7 @@
 
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title">Work-out buddy Quiz</h4>
+            <h4 class="panel-title">Fitness Quiz</h4>
           </div>
           <div class="panel-body">
 
@@ -188,7 +188,7 @@
 
             </form>
 
-            <button type="submit" class="btn btn-primary submit" id="submitBtn" data-toggle="modal" data-target="#matchModal">Submit</button>
+            <button type="submit" class="btn btn-primary submit" id="submitBtn" data-toggle="modal" data-target="#matchModal" style="background-color:black;border-color: black;color: white">Submit</button>
 
           </div>
         </div>
@@ -198,7 +198,9 @@
 
 
     <footer class="footer">
-      <div class="container">
+      <br>
+      <hr>
+      <div style="text-align: center">
         <p>Copyright&copy  Roberto Baldizon</p>
       </div>
     </footer>
@@ -206,24 +208,20 @@
 
 
   <div id="matchModal" class="modal">
-    <div class="modal-content">
-      <h4>Best work-out buddy Match</h4>
-      <div class="divider"></div>
-      <h5 id="matchName"></h5>
-      <img id="matchPhoto" width="200" src="">
+    <div class="modal-content" style="background-color:black;opacity:0.6;border-color: black">
+      <h3 style="text-align: center; color: white; opacity: 1.0">Your ideal workout buddy is:</h3>
+      <div class="divider">
+      <h4 id="matchName" style="text-align: center; color: white; opacity:1.0"></h4>
+      <br>
+        <div style="display:flex;justify-content:center;align-items:center;opacity:1.0">
+          <img id="matchPhoto" width="250" src="">
+        </div>
+      </div>
     </div>
     <div class="modal-footer">
-      <a href="/survey" class="btn btn-primary submit">Try Again!</a>
+      <a href="/survey" class="btn btn-primary submit" style="background-color:orange ;border-color: orange; color: black">Try Again!</a>
     </div>
   </div>
-
-
-
-
-
-<style>
-
-</style>
 
 <script type="text/javascript"> 
 

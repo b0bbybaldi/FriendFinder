@@ -31,7 +31,7 @@ var matches =
             ]
     },{
         "name":"Usain Bolt",
-        "photo":"https://upload.wikimedia.org/wikipedia/commons/4/46/Usain_Bolt_2011-09-04_001.jpg",
+        "photo":"https://en.wikipedia.org/wiki/Usain_Bolt#/media/File:Usain_Bolt_200_m_final_Daegu_2011.jpg",
         "scores":[
             2,
             2,
